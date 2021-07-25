@@ -6,11 +6,29 @@ function First_Function() {
 
 
 function Practice() { 
-    var sentence = "This is the second function for this HTML<br>"; //this line and the next are the cones the user can see on the webpage 
+    var sentence = "This is the second function for this HTML<br>"; //this line and the next are the ones the user can see on the webpage 
     sentence += "This function uses concatenate"; 
     document.getElementById("Concatenate").innerHTML = sentence; //this is the call to javascript 
 }  
 
+function Red() { 
+    var str = "This sentence should be red<br>"; //this line and the next are the ones the user can see on the webpage 
+    str += "This sentence should also be red"; 
+    var result = str.fontcolor("red");
+    document.getElementById("Red_Text").innerHTML = result; //this is the call to javascript 
+}  
 
 
+//-------------------MATH PROBLEM-------------------// 
 
+function addition_Function() { 
+    var addition = 2 + 2; 
+    document.getElementById("Math").innerHTML = "2 +2 =" + addition;
+} 
+
+//-------------------END MATH PROBLEM--------------// 
+
+
+function Alert_Box() { 
+    window.alert("This is an alert box").innerHTML = result; 
+} 
