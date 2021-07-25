@@ -19,6 +19,10 @@ function Red() {
 }  
 
 
+function Alert_Box() { 
+    window.alert("This is an alert box").innerHTML = result; 
+}  
+
 //-------------------MATH PROBLEM-------------------// 
 
 function addition_Function() { 
@@ -26,9 +30,7 @@ function addition_Function() {
     document.getElementById("Math").innerHTML = "2 +2 =" + addition;
 } 
 
+
+
+
 //-------------------END MATH PROBLEM--------------// 
-
-
-function Alert_Box() { 
-    window.alert("This is an alert box").innerHTML = result; 
-} 
