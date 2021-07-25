@@ -44,5 +44,8 @@ document.write(pink);
 document.write("<br>"); 
 //this shows how to do the math problem: document.write(3+3);
 document.write("3 plus 3 = "); //this line is just so the whole equation shows up on the page otherwise the person would just see "6" as the result. 
-document.write(3+3);
+document.write(3+3); 
+
+window.alert("3 + 3 = 6"); 
+window.alert("This page displays a String, multiple quotes and text with different font colors.")
 
