@@ -1,7 +1,11 @@
 
 //==========================================CREATING A JAVASCRIPT PROGRAM===================================================================// 
-//------------------------------------------COUNTDOWN---------------------------------------------------------------------------------------// 
 //------------------------------------------JAVASCRIPT LINK IN HTML IS AT THE END OF THE BODY TAG-------------------------------------------// 
+
+
+
+
+//------------------------------------------COUNTDOWN---------------------------------------------------------------------------------------// 
 function countdown() { //this function has a nested function and an 'if' statement 
     var seconds = document.getElementById("seconds").value; 
 
@@ -15,8 +19,10 @@ function countdown() { //this function has a nested function and an 'if' stateme
         } 
     tick(); 
 } 
-//--------------------------------------------------- END COUNTDOWN------------------------------------------------------------------------------//
+//--------------------------------------------------- END COUNTDOWN------------------------------------------------------------------------------// 
 
+
+//------------------------------------------------SLIDESHOW CONTROLS-------------------------------------------------------------------------// 
 var slideIndex = 1; //starts slideshow at first picture 
 showSlides(slideIndex);
 
@@ -25,7 +31,6 @@ function plusSlides(n) { //this function clicks to the next picture in the slide
   showSlides(slideIndex += n);
 }
 
-//----------------------------------------------------IMAGE CONTROLS-----------------------------------------------------------------------------// 
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -49,6 +54,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += "active";
 }
-//------------------------------------------------END IMAGE CONTROLS--------------------------------------------------------------------------// 
+//------------------------------------------------END SLIDESHOW CONTROLS--------------------------------------------------------------------------// 
 
 
