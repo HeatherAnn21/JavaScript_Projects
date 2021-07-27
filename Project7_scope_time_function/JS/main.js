@@ -64,6 +64,10 @@ example_7();
 function get_Date() { 
     if (new Date().getHours() <18) { // if the time is less than 6:00pm the message will appear 
         document.getElementById("Hello").innerHTML = "How are you today?";
+    } 
+    else { 
+        document.getElementById("Hello").innerHTML = "Did you have a good day?";
+
     }
 } 
 
@@ -72,6 +76,10 @@ function get_Date() {
 function get_Date_2() { //switch the "<" to ">" if time is greater than 6:00pm to check code 
     if (new Date().getHours() >18) { // if the time is greater than 6:00 pm the message will appear
         document.getElementById("Hello_2").innerHTML = "We hope you had a great day!";
+    } 
+    else { 
+        document.getElementById("Hello_2").innerHTML = "We hope you have a great day!";
+
     }
 } 
 
@@ -84,6 +92,9 @@ function if_statement () {
 function if_statement_2 () { //switch the "<" to ">" if date is greater than 20th to check code 
     if (new Date().getDate() <20) { // if the date is less than the 20th of the month the message will appear when the button is clicked 
         document.getElementById("End_Month_2").innerHTML = "We hope you have a great month";
+    } 
+    else { 
+        document.getElementById("End_Month_2").innerHTML = "We hope your month was good.";
     }
 } 
 
@@ -117,16 +128,16 @@ function Time_Function() {
 }
 
 //--------------------PRACTICE OF ELSE IF STATEMENTS-----------------------// 
-function Practice_Fun() { //cant get this function to work will come back to it later 
+function Practice_Fun() { 
     var Date_1 = new Date().getMonth(); 
     var Reply; 
-    if (Date_1 < 3 == Date_1 > 11) { 
+    if (Date_1 < 3 && Date_1 > 11) { 
         Reply = "It is Winter."; 
     } 
-    else if (Date_1 < 6 == Date_1 > 2) { 
+    else if (Date_1 < 6 && Date_1 > 2) { 
         Reply = "It is Spring."; 
     } 
-    else if (Date_1 < 8 == Date_1 > 5) { 
+    else if (Date_1 < 8 && Date_1 > 5) { 
         Reply = "It is Summer."; 
     } 
     else { 
@@ -135,11 +146,7 @@ function Practice_Fun() { //cant get this function to work will come back to it 
     document.getElementById("Date_11").innerHTML = Reply; 
 } 
 
-//I have changed every value I can think of im not sure what else to do 
-//when I use the double equal signs '==' it shows up as 'it is winter' which is wrong 
-//I changed it to '&&' and it changed to 'it is fall' which is also wrong 
-//ive changed the function name, id, 'reply', 'date_1', took out the "or equal to parts and added them back 
-//ive been staring at this code for at least an hour 
+
 
 
 
