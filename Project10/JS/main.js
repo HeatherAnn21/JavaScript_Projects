@@ -74,13 +74,15 @@ function const_function() {
     document.getElementById("const").innerHTML = "The cost of the " + m_s. condition + " " + m_s.type + " was " + m_s.price + " and the color was " + m_s.color;
 } 
 
+
+
 //______________________________________________Var/Let block scope  _____________________________________________// 
 
 //variables outside of a function: an be used elsewhere in the code =global 
 //variables inside of a function can only be used with in that function =not global 
 //variables using 'var' in curly brackets CAN be used outside of that set of code =global 
 //variables using 'let' in curly brackets can NOT be used outside of that set of code = not global 
-
+document.write("<br>" + "Block Scope" + "<br>"); 
 var H = 20; 
 document.write(H); 
 { 
@@ -115,16 +117,31 @@ document.write("<br>" + G);
 //because 'var' can be read outside of the curly brackets 
 
 
-//___________________________________________________Objects_______________________________________// 
+//___________________________________________________Objects___________________________________________________________// 
 
- let mypet = { //can not get this code to work 
-    breed: "lab ", 
-    age: "5 ", 
+
+ let mypet = { //for this code to work I had to move the <script> tag in the html file to the bottom of the body tag
+    breed: "lab ", //doing so makes this statement and the block scope section show at the bottom of the webpage because the html 
+    age: "5 ", //<p> tags that reference the rest of the code in this file are now above the script tag 
     color: "black ", 
     gender: "female ", 
     name: "Gypsy ", 
     description : function() { 
         return "This dog is a " + this.age + "year old " + this.gender + this.breed + "with " + this.color + "fur, named " + this.name; 
-    }
+    } 
 }; 
-document.getElementById("pet").innerHTML = mypet.description();
+document.getElementById("pet").innerHTML = mypet.description(); 
+
+
+
+//____________________________________________________Break Statement___________________________________________________// 
+
+
+
+
+    let text = "";
+        for (let r = 20; r < 40; r++) {
+    if (r === 30) { break; }
+    text += "The number is " + r + "<br>";
+    } 
+document.getElementById("break").innerHTML = break_statement(); 
