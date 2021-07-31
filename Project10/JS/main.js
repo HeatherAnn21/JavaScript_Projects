@@ -137,11 +137,29 @@ document.getElementById("pet").innerHTML = mypet.description();
 //____________________________________________________Break Statement___________________________________________________// 
 
 
+document.write("<br>");  
 
-
+function break_statement() { 
     let text = "";
-        for (let r = 20; r < 40; r++) {
-    if (r === 30) { break; }
-    text += "The number is " + r + "<br>";
+        for (let r = 20; r < 41; r++) {
+            if (r === 30) { break; }
+            text += "The number is " + r + "<br>";
     } 
-document.getElementById("break").innerHTML = break_statement(); 
+    document.getElementById("break").innerHTML = text; 
+} 
+document.write("<br>"); 
+
+//____________________________________________________Continue Statement___________________________________________________// 
+
+
+document.write("<br>"); 
+
+function continue_1() { 
+    let text = "";
+        for (let r = 20; r < 41; r++) {
+            if (r === 30) { continue; }
+            text += "The number is " + r + "<br>";
+    } 
+    document.getElementById("continue").innerHTML = text; 
+} 
+document.write("<br>"); 
