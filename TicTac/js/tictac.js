@@ -152,16 +152,21 @@ function audio(audioURL) {
 
 
 //This function usilizes the HTML canvas to draw win lines 
-function drawWinLine(coordX1, coordY1, coordX2, coordY2) { 
+function DrawWinLine(coordX1, coordY1, coordX2, coordY2) { 
     //this line accesses the HTML canvas element 
     const canvas = document.getElementById('win-lines') 
     //this lines gives acces to methids and properties to use on canvas 
     const c = canvas.getContext('2d'); 
-    let x1 = coordX1, //this line indicates where the start of a lines x axis is 
-        y1 = coordY1, //this lines indicates where the start of a lines y axis is 
-        x2 = coordX2, //this lines indicates where the end of a lines x axis is  
-        y2 = coordY2, //this lines indicates where the end of a lines y axis is 
-        x = x1, //this variable stores temporary x axis data we update in the animation loop 
+    let x1 = coordX1,  
+        //this line indicates where the start of a lines x axis is 
+        y1 = coordY1, 
+        //this lines indicates where the start of a lines y axis is 
+        x2 = coordX2, 
+        //this lines indicates where the end of a lines x axis is  
+        y2 = coordY2, 
+        //this lines indicates where the end of a lines y axis is 
+        x = x1, 
+        //this variable stores temporary x axis data we update in the animation loop 
         y = y1; //this variable stores temporary y axis data we update in the animation loop
 
 
