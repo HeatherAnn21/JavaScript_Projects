@@ -1,3 +1,16 @@
+body {
+    background-color: rgb(187, 25, 25);
+    } 
+
+h1, h3 { 
+    font-family: cursive; 
+    text-align:start
+} 
+
+div { 
+    font-family: monospace; 
+} 
+
 #menuBG { 
     width:400px; 
     height:470px; 
@@ -5,14 +18,14 @@
     } 
 
 #frmMenu { 
-    width:400px; 
+    width:600px; 
     height:200px; 
     } 
 
 #totalPrice { 
     width:200px; 
     height:190px; 
-    margin:0 auto; 
+    margin:20px auto; 
     float:right; 
     } 
 
@@ -21,6 +34,12 @@
     height:200px; 
     float:left; 
     } 
+
+.center { 
+    width:200px; 
+    height:200px; 
+    float:left; 
+}
 
 .right { 
     width:200px; 
@@ -45,17 +64,7 @@
     margin:10px 0px 0px 100px; 
     width:100px; 
     height:40px; 
+    display: block; 
+    margin: 25px auto; 
     } 
 
-body {
-    background-color: rgb(187, 25, 25);
-    } 
-
-h1, h3 { 
-    font-family: cursive;
-} 
-
-div { 
-    font-family: monospace; 
-    background-color: rgb(226, 223, 43);
-}
