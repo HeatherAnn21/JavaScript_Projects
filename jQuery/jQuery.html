@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<script> 
+
+//using the dollar sign: $ is the same thing as using the word 'jQuery' to call on it 
+//the following line of code is writing jQuery to check the html(document) to make sure its ready 
+//then calls on it to preform a function 
+$(document).ready(function() { 
+    $("html").append(
+        "<body>\
+            <div id='container'>\
+                <div id='inner'>\
+                    <h1>Basic jQuery</h1>\
+                    <p id='1'>Paragraph 1</p>\
+                    <p id='2'>Paragraph 2</p>\
+                    <p id='3'>Paragraph 3</p>\
+                </div>\
+            </div>\
+        </body>" 
+    );
+    $("#2").css({"color":"red"});// this is one whole jQuery function that calls the 'p' tag of the html 
+    //then uses the method for the css to change the font color to red just for the id#2
+    //the # calls for the id 
+
+    //now were trying to make h1 disappear when the user clicks on paragraph 3 
+    $("#3").click(function() { //the #3 calls to the id #3 for paragraph 3, the .click means when you click it the code call call the function to the next line of code
+        $('h1').hide(); //this calls for when you click paragraph 3 to hide 'h1' 
+    
+    });
+}); 
+
+
+</script>
+</html>
