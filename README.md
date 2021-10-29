@@ -1,5 +1,5 @@
 # JavaScript_Projects 
-This repository will contain all of my projects for the JacaScript Course. 
+This repository wcontails all of my projects for the JacaScript Course. 
 ## Projects: 
 
 [•Calculator](https://github.com/HeatherAnn21/JavaScript_Projects/tree/main/Calculator) 
